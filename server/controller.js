@@ -1,7 +1,7 @@
-const { Review } = require("../database/models");
+const { Review } = require("../database/index.js");
 
 const get = (req, res) => {
-  Todo.find({}, (err, data) => {
+  Review.find({}, (err, data) => {
     if (err) {
       console.error(err);
     } else {
