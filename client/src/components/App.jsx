@@ -8,6 +8,6 @@ export default class App extends React.Component {
     //function bindings
   }
   render() {
-    return <div />;
+    return <div>something</div>;
   }
 }
