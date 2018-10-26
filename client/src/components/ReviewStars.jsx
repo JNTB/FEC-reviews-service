@@ -2,7 +2,7 @@ import React from "react";
 
 export default function ReviewStars() {
   return (
-    <div>
+    <div className="reviewHead">
       <h1 className="reviewHeader">420 Reviews </h1>
       <div className="stars">
         <span class="fa fa-star checked" />

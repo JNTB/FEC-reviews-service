@@ -72,9 +72,16 @@ input::placeholder {
 .search i {
   position: absolute;
   left: 470px;
-  top: 18px;
+  top: 60px;
   color: var(--font-text-small-color, #484848) !important;
   font-weight: 600 !important;
   font-size: 14px !important;
   line-height: 18px !important;
+}
+
+.reviewHead {
+  border-top: 1px solid #c7c7c7;
+  padding-top: 40px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #c7c7c7;
 }
