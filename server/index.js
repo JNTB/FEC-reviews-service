@@ -14,3 +14,5 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, "../client/dist")));
 
 app.listen(port, () => console.log(`listening on port ${port}!`));
+
+// module.exports = db

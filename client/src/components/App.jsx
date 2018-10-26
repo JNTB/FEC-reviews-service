@@ -1,5 +1,6 @@
 import React from "react";
 import axios from "axios";
+import ReviewStars from "./ReviewStars";
 
 export default class App extends React.Component {
   constructor(props) {
@@ -8,6 +9,10 @@ export default class App extends React.Component {
     //function bindings
   }
   render() {
-    return <div>something</div>;
+    return (
+      <div>
+        <ReviewStars />
+      </div>
+    );
   }
 }
