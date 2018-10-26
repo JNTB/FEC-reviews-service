@@ -11,7 +11,6 @@ export default function ReviewStars() {
         <span class="fa fa-star" />
         <span class="fa fa-star" />
       </div>
-
       <div className="search">
         <i class="fa fa-search" />
         <input type="text" placeholder="Search Results" results="0" />
