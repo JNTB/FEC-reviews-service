@@ -14,7 +14,7 @@ module.exports = {
         test: /\.js[x]?/,
         exclude: /node_modules/,
         options: {
-          presets: ["react", "env"]
+          presets: ["react", "env", "es2015"]
         }
       }
     ]
