@@ -2,6 +2,7 @@ import React from "react";
 import CommentListEntry from "./CommentListEntry";
 import pageNumbers from "./PAGENUMBERLOGIC";
 import axios from "axios";
+import $ from "jquery";
 
 export default class Pagination extends React.Component {
   constructor(props) {
@@ -47,6 +48,12 @@ export default class Pagination extends React.Component {
           });
         }
       );
+      $("html, body").animate(
+        {
+          scrollTop: $(".app").offset().top
+        },
+        1000
+      );
       return;
     }
     if (!Number(e.target.id) && e.target.id === "❮") {
@@ -61,6 +68,12 @@ export default class Pagination extends React.Component {
           });
         }
       );
+      $("html, body").animate(
+        {
+          scrollTop: $(".app").offset().top
+        },
+        1000
+      );
       return;
     }
     this.setState(
@@ -73,6 +86,12 @@ export default class Pagination extends React.Component {
           pagesDisplay: pageNumbers(15, this.state.currentPage)
         });
       }
+    );
+    $("html, body").animate(
+      {
+        scrollTop: $(".app").offset().top
+      },
+      1000
     );
   }
 
