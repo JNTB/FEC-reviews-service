@@ -10,7 +10,7 @@ export default class Pagination extends React.Component {
       reviews: [],
       currentPage: 1,
       reviewsPerPage: 7,
-      pagesDisplay: [1, 2, 3, "...", 15, "❯"]
+      pagesDisplay: [1, 2, 3, "...", 15, "❯", ""]
     };
     this.handleClick = this.handleClick.bind(this);
     this.fetchReviews = this.fetchReviews.bind(this);
@@ -31,19 +31,38 @@ export default class Pagination extends React.Component {
   }
 
   handleClick(e) {
-    // if (e.target === "...") {
-    //   return;
-    // }
-    // if (e.target === "❯") {
-    //   this.setState({
-    //     currentPage: this.state.currentPage + 1
-    //   });
-    // }
-    // if (e.target === "❮") {
-    //   this.setState({
-    //     currentPage: this.state.currentPage - 1
-    //   });
-    // }
+    console.log(e.target.id, "e.target");
+    if (!Number(e.target.id) && e.target.id === "...") {
+      return;
+    }
+    if (!Number(e.target.id) && e.target.id === "❯") {
+      this.setState(
+        {
+          currentPage: this.state.currentPage + 1
+        },
+        () => {
+          this.fetchReviews();
+          this.setState({
+            pagesDisplay: pageNumbers(15, this.state.currentPage)
+          });
+        }
+      );
+      return;
+    }
+    if (!Number(e.target.id) && e.target.id === "❮") {
+      this.setState(
+        {
+          currentPage: this.state.currentPage - 1
+        },
+        () => {
+          this.fetchReviews();
+          this.setState({
+            pagesDisplay: pageNumbers(15, this.state.currentPage)
+          });
+        }
+      );
+      return;
+    }
     this.setState(
       {
         currentPage: Number(e.target.id)
@@ -60,14 +79,6 @@ export default class Pagination extends React.Component {
   render() {
     const { currentPage, reviewsPerPage } = this.state;
     const comments = this.state.reviews;
-
-    // const indexOfLastReview = currentPage * reviewsPerPage;
-    // const indexOfFirstReview = indexOfLastReview - reviewsPerPage;
-
-    // const currentReviews = comments.slice(
-    //   indexOfFirstReview,
-    //   indexOfLastReview
-    // );
     const numbers = this.state.pagesDisplay;
     for (let i = 1; i <= Math.ceil(comments.length / reviewsPerPage); i++) {
       numbers.push(i);
