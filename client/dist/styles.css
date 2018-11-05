@@ -233,4 +233,5 @@ span.blue {
 
 .pagination-container {
   display: inline-block;
+  cursor: pointer;
 }
