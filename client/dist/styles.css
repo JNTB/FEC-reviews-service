@@ -1,5 +1,5 @@
 .app {
-  padding-left: 400px;
+  padding-left: 375px;
 }
 
 .reviewHeader {
@@ -65,22 +65,52 @@ input::placeholder {
   height: 40px;
   width: 250px;
   font-size: 15px;
+  color: var(--font-text-small-color, #7c7979) !important;
 }
 
-.search input[type="text"] {
+.search input[type="search"] {
   display: inline-block;
-  padding-left: 27px;
-  height: 30px;
+  padding-left: 29px;
+  width: 180px;
+  height: 35px;
+  font-size: inherit;
+  color: var(--font-text-small-color, #7c7979) !important;
 }
 
 .search i {
   position: absolute;
-  left: 870px;
+  left: 845px;
   top: 60px;
-  color: var(--font-text-small-color, #484848) !important;
+  color: var(--font-text-small-color, #7c7979) !important;
   font-weight: 600 !important;
   font-size: 14px !important;
   line-height: 18px !important;
+}
+
+input.seach-query {
+  background-color: var(--color-clear, transparent) !important;
+  font-size: var(--font-text-small-font-size, 14px) !important;
+  line-height: var(--font-text-small-line-height, 18px) !important;
+  letter-spacing: var(--font-text-small-letter-spacing, normal) !important;
+  font-family: var(
+    --font-text-small-font-family,
+    Circular,
+    -apple-system,
+    BlinkMacSystemFont,
+    Roboto,
+    Helvetica Neue,
+    sans-serif
+  ) !important;
+  text-transform: var(--font-text-small-text-transform, undefined) !important;
+  color: var(--font-text-small-color, #8d8787) !important;
+  padding-top: var(--spacing-form-element-small-vertical, 7px) !important;
+  padding-bottom: var(--spacing-form-element-small-vertical, 7px) !important;
+  font-weight: var(--font-book-font-weight, 600) !important;
+  padding-left: var(--spacing-form-element-small-horizontal, 7px) !important;
+  padding-right: var(--spacing-form-element-small-horizontal, 7px) !important;
+}
+#Search::-webkit-search-cancel-button {
+  width: 70px;
 }
 
 .reviewHead {
@@ -145,7 +175,7 @@ input::placeholder {
   font-size: 16px;
   color: #008489;
   padding-right: 50px;
-  padding-left: 100px;
+  padding-left: 98px;
 }
 
 .Vsmall-stars {
@@ -158,8 +188,8 @@ input::placeholder {
 }
 
 img {
-  width: 3%;
-  height: 3%;
+  width: 4%;
+  height: 4%;
   border-radius: 50%;
   margin-right: 20px;
 }
@@ -234,4 +264,13 @@ span.blue {
 .pagination-container {
   display: inline-block;
   cursor: pointer;
+}
+
+.flag {
+  padding-left: 670px;
+}
+
+.commentList {
+  position: relative;
+  left: -50px;
 }

@@ -13,7 +13,12 @@ export default function ReviewStars() {
       </div>
       <div className="search">
         <i className="fa fa-search" />
-        <input type="text" placeholder="Search Results" results="0" />
+        <input
+          className="search-query"
+          type="search"
+          placeholder="Search Reviews"
+          results="0"
+        />
       </div>
     </div>
   );

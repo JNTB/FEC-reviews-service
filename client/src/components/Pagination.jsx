@@ -119,10 +119,10 @@ export default class Pagination extends React.Component {
       );
     });
     return (
-      <div>
+      <div className="commentList">
         <ul>
           {this.state.reviews.map((comment, index) => (
-            <CommentListEntry comment={comment} key={comment.id} />
+            <CommentListEntry comment={comment} key={index} />
           ))}
         </ul>
 
