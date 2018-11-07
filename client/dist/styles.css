@@ -118,7 +118,7 @@ input.seach-query {
   padding-top: 40px;
   padding-bottom: 30px;
   border-bottom: 1px solid #eeecec;
-  width: 705px;
+  /* width: 705px; */
 }
 
 .left-Column {
