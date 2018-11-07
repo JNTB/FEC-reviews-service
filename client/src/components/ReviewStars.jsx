@@ -11,15 +11,17 @@ export default function ReviewStars() {
         <span className="fa fa-star" />
         <span className="fa fa-star" />
       </div>
-      <div className="search">
-        <i className="fa fa-search" />
-        <input
-          className="search-query"
-          type="search"
-          placeholder="Search Reviews"
-          results="0"
-        />
-      </div>
+      <span>
+        <div className="search">
+          <i className="fa fa-search" />
+          <input
+            className="search-query"
+            type="search"
+            placeholder="Search Reviews"
+            results="0"
+          />
+        </div>
+      </span>
     </div>
   );
 }

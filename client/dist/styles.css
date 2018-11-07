@@ -78,9 +78,9 @@ input::placeholder {
 }
 
 .search i {
-  position: absolute;
-  left: 845px;
-  top: 60px;
+  position: relative;
+  left: 20px;
+  top: 3px;
   color: var(--font-text-small-color, #7c7979) !important;
   font-weight: 600 !important;
   font-size: 14px !important;
