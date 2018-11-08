@@ -1,11 +1,12 @@
 import React from "react";
+import styles from "../css/Miniheader.css";
 
 export default function Miniheader() {
   return (
     <div>
-      <div className="left-Column">
-        <div className="title">Accuracy</div>
-        <div className="ACsmall-stars">
+      <div className={styles.leftColumn}>
+        <div className={styles.title}>Accuracy</div>
+        <div className={styles.ACsmallStars}>
           <span className="fa fa-star checked" />
           <span className="fa fa-star checked" />
           <span className="fa fa-star checked" />
@@ -14,8 +15,8 @@ export default function Miniheader() {
         </div>
 
         <div>
-          <div className="title">Communication</div>
-          <div className="COMsmall-stars">
+          <div className={styles.title}>Communication</div>
+          <div className={styles.COMsmallStars}>
             <span className="fa fa-star checked" />
             <span className="fa fa-star checked" />
             <span className="fa fa-star checked" />
@@ -25,8 +26,8 @@ export default function Miniheader() {
         </div>
 
         <div>
-          <div className="title">Cleanliness</div>
-          <div className="CLsmall-stars">
+          <div className={styles.title}>Cleanliness</div>
+          <div className={styles.CLsmallStars}>
             <span className="fa fa-star checked" />
             <span className="fa fa-star checked" />
             <span className="fa fa-star checked" />
@@ -36,10 +37,10 @@ export default function Miniheader() {
         </div>
       </div>
 
-      <div className="right-Column">
+      <div className={styles.rightColumn}>
         <div>
-          <div className="title">Location</div>
-          <div className="small-stars">
+          <div className={styles.title}>Location</div>
+          <div className={styles.smallStars}>
             <span className="fa fa-star checked" />
             <span className="fa fa-star checked" />
             <span className="fa fa-star checked" />
@@ -49,8 +50,8 @@ export default function Miniheader() {
         </div>
 
         <div>
-          <div className="title">Check-in</div>
-          <div className="small-stars">
+          <div className={styles.title}>Check-in</div>
+          <div className={styles.smallStars}>
             <span className="fa fa-star checked" />
             <span className="fa fa-star checked" />
             <span className="fa fa-star checked" />
@@ -60,8 +61,8 @@ export default function Miniheader() {
         </div>
 
         <div>
-          <div className="title">Value</div>
-          <div className="Vsmall-stars">
+          <div className={styles.title}>Value</div>
+          <div className={styles.VsmallStars}>
             <span className="fa fa-star checked" />
             <span className="fa fa-star checked" />
             <span className="fa fa-star checked" />

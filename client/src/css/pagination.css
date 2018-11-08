@@ -1,0 +1,33 @@
+.paginationContainer {
+  display: inline-block;
+  cursor: pointer;
+}
+.pageNumbers {
+  padding: 30px 30px;
+  display: inline-block !important;
+  background-color: transparent !important;
+  border: none !important;
+  color: #008489 !important;
+  font: inherit !important;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
+    Helvetica Neue, sans-serif !important;
+  text-decoration: none !important;
+}
+.commentList {
+  position: relative;
+  left: -50px;
+}
+.blue {
+  background: #008489;
+  border-radius: 0.5em;
+  -moz-border-radius: 0.5em;
+  -webkit-border-radius: 5em;
+  color: #ffffff;
+  display: inline-block;
+  font-weight: bold;
+  line-height: 2em;
+
+  margin-right: 15px;
+  text-align: center;
+  width: 2em;
+}

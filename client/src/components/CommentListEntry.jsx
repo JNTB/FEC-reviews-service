@@ -1,12 +1,12 @@
 import React from "react";
-// import comment from "./CommentList";
+import styles from "../css/CommentListEntry.css";
 
 export default function CommentListEntry(props) {
   return (
     <div>
-      <div className="container">
+      <div className={styles.container}>
         <svg
-          className="flag"
+          className={styles.flag}
           viewBox="0 0 24 24"
           role="img"
           aria-label="Report"
@@ -23,14 +23,14 @@ export default function CommentListEntry(props) {
             fillRule="evenodd"
           />
         </svg>
-        <img src={props.comment.user_img} className="image" />
-        <div className="user">
-          <p className="name">{props.comment.user}</p>
-          <p className="date">{props.comment.date}</p>
+        <img src={props.comment.user_img} className={styles.image} />
+        <div className={styles.user}>
+          <p className={styles.name}>{props.comment.user}</p>
+          <p className={styles.date}>{props.comment.date}</p>
         </div>
       </div>
 
-      <div className="comment">{props.comment.comment}</div>
+      <div className={styles.comment}>{props.comment.comment}</div>
     </div>
   );
 }

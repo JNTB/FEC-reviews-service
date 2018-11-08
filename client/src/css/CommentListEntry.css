@@ -1,0 +1,46 @@
+.container {
+  white-space: nowrap;
+  padding-bottom: 20px;
+  padding-top: 15px;
+}
+
+.flag {
+  padding-left: 670px;
+}
+.image {
+  width: 4%;
+  height: 4%;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+.user {
+  display: inline-block;
+  vertical-align: top;
+}
+.name {
+  font-weight: 600 !important;
+  overflow-wrap: break-word !important;
+  font-size: 16px !important;
+  line-height: 3px !important;
+  letter-spacing: normal !important;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
+    "Helvetica Neue", sans-serif !important;
+  color: rgb(72, 72, 72) !important;
+  margin: 0px !important;
+  padding-top: 15px;
+}
+.date {
+  font-family: Circular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.43;
+  color: #484848;
+}
+.comment {
+  padding-bottom: 20px;
+  margin-right: 50%;
+  font-family: Circular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 17px;
+  line-height: 1.43;
+  color: #484848;
+  border-bottom: 1px solid #eeecec;
+}

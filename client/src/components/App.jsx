@@ -2,6 +2,7 @@ import React from "react";
 import ReviewStars from "./ReviewStars";
 import Miniheader from "./Miniheader";
 import Pagination from "./Pagination";
+import styles from "../css/app.css";
 
 export default class App extends React.Component {
   constructor(props) {
@@ -11,7 +12,7 @@ export default class App extends React.Component {
 
   render() {
     return (
-      <div className="app">
+      <div className={styles.app}>
         <ReviewStars />
         <Miniheader />
         <Pagination />

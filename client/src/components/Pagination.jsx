@@ -3,6 +3,7 @@ import CommentListEntry from "./CommentListEntry";
 import pageNumbers from "./PAGENUMBERLOGIC";
 import axios from "axios";
 import $ from "jquery";
+import styles from "../css/pagination.css";
 
 export default class Pagination extends React.Component {
   constructor(props) {
@@ -50,7 +51,7 @@ export default class Pagination extends React.Component {
       );
       $("html, body").animate(
         {
-          scrollTop: $(".app").offset().top
+          scrollTop: $("._2a4F6xS7NQm2FuOFE9LEvK").offset().top
         },
         1000
       );
@@ -70,7 +71,7 @@ export default class Pagination extends React.Component {
       );
       $("html, body").animate(
         {
-          scrollTop: $(".app").offset().top
+          scrollTop: $("._2a4F6xS7NQm2FuOFE9LEvK").offset().top
         },
         1000
       );
@@ -89,7 +90,7 @@ export default class Pagination extends React.Component {
     );
     $("html, body").animate(
       {
-        scrollTop: $(".app").offset().top
+        scrollTop: $("._2a4F6xS7NQm2FuOFE9LEvK").offset().top
       },
       1000
     );
@@ -106,9 +107,11 @@ export default class Pagination extends React.Component {
 
     const renderPageNumbers = numbers.map(number => {
       return (
-        <div className="pagination-container">
+        <div className={styles.paginationContainer}>
           <span
-            className={currentPage === number ? "blue" : "pageNumbers"}
+            className={
+              currentPage === number ? styles.blue : styles.pageNumbers
+            }
             key={number}
             id={number}
             onClick={this.handleClick}
@@ -119,14 +122,14 @@ export default class Pagination extends React.Component {
       );
     });
     return (
-      <div className="commentList">
+      <div className={styles.commentList}>
         <ul>
           {this.state.reviews.map((comment, index) => (
             <CommentListEntry comment={comment} key={index} />
           ))}
         </ul>
 
-        <ul id="page-numbers">{renderPageNumbers}</ul>
+        <ul>{renderPageNumbers}</ul>
       </div>
     );
   }

@@ -1,0 +1,62 @@
+.leftColumn {
+  display: inline-block;
+  padding-top: 20px;
+}
+.title {
+  display: inline-block;
+  padding-bottom: 20px;
+  font-family: Circular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.43;
+  color: #484848;
+  background-color: #fff;
+}
+.ACsmallStars {
+  display: inline-block;
+  margin-left: 16px;
+  font-size: 16px;
+  color: #008489;
+  padding-right: 50px;
+  padding-left: 115px;
+}
+
+.COMsmallStars {
+  display: inline-block;
+  margin-left: 16px;
+  font-size: 16px;
+  color: #008489;
+  padding-right: 50px;
+  padding-left: 70px;
+}
+
+.CLsmallStars {
+  display: inline-block;
+  margin-left: 16px;
+  font-size: 16px;
+  color: #008489;
+  padding-right: 50px;
+  padding-left: 98px;
+}
+.rightColumn {
+  display: inline-block;
+  padding-top: 20px;
+}
+
+.smallStars {
+  display: inline-block;
+  margin-left: 16px;
+  font-size: 16px;
+  color: #008489;
+  padding-right: 50px;
+  padding-left: 123px;
+}
+
+.VsmallStars {
+  display: inline-block;
+  margin-left: 16px;
+  font-size: 16px;
+  color: #008489;
+  padding-right: 50px;
+  padding-left: 146px;
+}

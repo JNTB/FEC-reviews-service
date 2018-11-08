@@ -91,7 +91,7 @@ for (let i = 0; i < 100; i++) {
   let user = useropts[Math.floor(Math.random() * useropts.length)];
   let date = dateopts[Math.floor(Math.random() * dateopts.length)];
   let comment = `${start} this house is so ${adj}, i cannot believe how incredibly ${owneradj} ${owner} was. I would give ${owner} house a ${rating}`;
-  let imgstring = `./profilePics/${user}.png`;
+  let imgstring = `https://s3-us-west-1.amazonaws.com/fecuserpics/${user}.png`;
 
   review.user = user;
   review.date = date;
