@@ -1,0 +1,19 @@
+version: "2.1"
+
+services:
+  fec-reviews-service:
+    container_name: fec-reviews-service
+    restart: always
+    build: .
+    image: fec-reviews-service
+    environment:
+      NODE_ENV: production
+    ports:
+      - 2000:2000
+    links:
+      - mongo
+  mongo:
+    container_name: mongo
+    image: mongo
+    ports:
+      - 27017:27017

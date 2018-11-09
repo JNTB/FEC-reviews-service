@@ -39,8 +39,9 @@
     "webpack-cli": "^3.1.2"
   },
   "scripts": {
-    "build": "webpack -w",
-    "start": "nodemon ./server/www.js",
+    "seed": "node ./database/seedData.js",
+    "build": "webpack ",
+    "start": "node ./server/www.js",
     "test": "jest"
   },
   "repository": {

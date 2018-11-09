@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-mongoose.connect("mongodb://localhost/reviews");
+mongoose.connect("mongodb://mongo:27017/reviews");
 
 const db = mongoose.connection;
 db.on("error", console.error.bind(console, "connection error:"));
