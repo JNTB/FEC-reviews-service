@@ -12,8 +12,10 @@ services:
       - 2000:2000
     links:
       - mongo
+    depends_on:
+      - mongo
   mongo:
-    container_name: mongo
+    # container_name: mongo
     image: mongo
     ports:
       - 27017:27017
